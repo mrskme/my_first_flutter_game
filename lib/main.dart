@@ -11,7 +11,7 @@ import "dart:math";
 To-do:
 
 Check out on window resize function to recalibrate size
-
+Implement getx for state management
 
 */
 
@@ -56,7 +56,7 @@ class Player extends SpriteComponent with Tappable {
   Directions direction = Directions.left;
 
   void loadPlayer() async {
-    sprite = await Sprite.load('explosion-0.png');
+    sprite = await Sprite.load('crate.png');
     position = Vector2(200, 200);
     size = Vector2(200, 200);
   }
